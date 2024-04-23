@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Venue</title>
+    <style>
+        /* CSS Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #ff69b4;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .home, .product, .buttons {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .home {
+            background-color: #008080;
+        }
+        .product {
+            background-color: #ff4500;
+        }
+        .buttons {
+            background-color: #800080;
+        }
+        .wedding-options {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .wedding-option {
+            width: 30%;
+            text-align: center;
+        }
+        .footer {
+            background-color: #ff69b4;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin: 20px;
+        }
+        input[type="text"], textarea {
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+        button:hover {
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="home">Home</div>
+        <div class="product">Product</div>
+        <div class="buttons">Buttons</div>
+    </header>
+
+    <div class="wedding-options">
+        <div class="wedding-option">
+            <img src="option1.jpg" alt="Option 1">
+            <h3>Option 1</h3>
+            <p>Description of Option 1</p>
+        </div>
+        <div class="wedding-option">
+            <img src="option2.jpg" alt="Option 2">
+            <h3>Option 2</h3>
+            <p>Description of Option 2</p>
+        </div>
+        <div class="wedding-option">
+            <img src="option3.jpg" alt="Option 3">
+            <h3>Option 3</h3>
+            <p>Description of Option 3</p>
+        </div>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Wedding Venue. All rights reserved.
+    </footer>
+
+    <form>
+        <h2>Contact Us</h2>
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email</label>
+        <input type="text" id="email" name="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        // JavaScript code
+        // Example: Add interactivity to your form
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            alert('Form submitted!');
+        });
+    </script>
+</body>
+</html>
