@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Wedding Venue</title>
+  <style>
+    /* Global Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Header Styles */
+    .header {
+      background-color: #f5f5f5;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .header h1 {
+      color: #333;
+    }
+
+    .header a {
+      margin: 0 10px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    /* Body Styles */
+    .container {
+      margin: 20px auto;
+      max-width: 600px;
+      text-align: center;
+    }
+
+    .image-container {
+      margin-bottom: 20px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+    }
+
+    /* Footer Styles */
+    .footer {
+      background-color: #f5f5f5;
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Form Styles */
+    .form-container {
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    .form-container h2 {
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="text"],
+    .form-container textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+
+    .form-container input[type="submit"] {
+      background-color: #333;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Wedding Venue</h1>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">Buttons</a>
+  </div>
+
+  <div class="container">
+    <div class="image-container">
+      <img src="wedding.jpg" alt="Wedding Venue Image">
+    </div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum vitae ipsum id lacus suscipit dignissim vel nec arcu. Sed in odio id tellus faucibus auctor. Quisque laoreet, nunc eget pharetra rhoncus, lorem nisi fermentum metus, eget luctus metus lectus nec velit. Mauris mollis mauris nec posuere.</p>
+    <p>Nulla facilisi. Mauris dapibus, nisi id ultricies ultrices, urna lectus vehicula sem, quis efficitur quam orci vitae lectus. Aliquam ultrices ac enim a lacinia. Cras euismod eros vel erat luctus facilisis. Fusce tristique metus nec tortor tincidunt, at mollis libero efficitur.</p>
+  </div>
+
+  <div class="footer">
+    &copy; 2024 Wedding Venue. All rights reserved.
+  </div>
+
+  <div class="form-container">
+    <h2>Contact Us</h2>
+    <form>
+  <label for="name">Name:</label>
+  <input type="text" id="name" placeholder="Name">
+
+  <label for="email">Email:</label>
+  <input type="text" id="email" placeholder="Email">
+
+  <label for="message">Message:</label>
+  <textarea id="message" placeholder="Message"></textarea>
+
+  <input type="submit" value="Submit">
+</form>
+
+  </div>
+
+  <script>
+    // Add any JavaScript code here if needed
+  </script>
+</body>
+</html>
