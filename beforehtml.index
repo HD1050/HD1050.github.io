@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wedding Venue</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f0e6f6;
+        color: #333;
+    }
+    header {
+        background-color: #ffb6c1;
+        color: #fff;
+        padding: 10px 20px;
+        text-align: center;
+    }
+    nav a {
+        color: white;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .container {
+        padding: 20px;
+        text-align: center;
+    }
+    .wedding-option {
+        margin: 20px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    .wedding-option img {
+        width: 100%;
+        border-radius: 8px;
+    }
+    footer {
+        background-color: #ffb6c1;
+        color: #fff;
+        text-align: center;
+        padding: 10px 20px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    form {
+        margin-top: 20px;
+    }
+    input, textarea {
+        width: 90%;
+        padding: 12px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type=submit] {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #45a049;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Welcome to Our Wedding Venue</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#options">Wedding Options</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="container" id="home">
+    <h2>Make Your Special Day Unforgettable</h2>
+    <p>Discover our bespoke wedding services tailored to make your wedding day as beautiful as your love story.</p>
+</div>
+
+<div class="container" id="options">
+    <div class="wedding-option">
+        <img src="https://example.com/image1.jpg" alt="Beach Wedding">
+        <h3>Beach Wedding</h3>
+        <p>Experience a stunning beachfront ceremony with exquisite views and a romantic atmosphere.</p>
+    </div>
+    <div class="wedding-option">
+        <img src="https://example.com/image2.jpg" alt="Garden Wedding">
+        <h3>Garden Wedding</h3>
+        <p>Enjoy your special day surrounded by lush gardens and the sweet fragrances of nature.</p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Your Wedding Venue. All rights reserved.</p>
+    <form id="contact">
+        <h3>Contact Us</h3>
+        <input type="text" id="name" name="name" placeholder="Your name">
+        <input type="email" id="email" name="email" placeholder="Your email">
+        <textarea id="message" name="message" placeholder="Write something..."></textarea>
+        <input type="submit" value="Send">
+    </form>
+</footer>
+
+<script>
+    // Add JavaScript here for interactive elements if needed
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Thank you for contacting us!');
+    });
+</script>
+
+</body>
+</html>
