@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Venue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+        }
+        header nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+        }
+        .button {
+            padding: 10px 20px;
+            background-color: #5A88CA;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .image-desc {
+            margin-bottom: 20px;
+        }
+        .footer {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .form-section {
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        .form-section h2, label {
+            color: #333;
+        }
+        .form-section form input, .form-section form textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 8px 0;
+            display: inline-block;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .form-section form button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            border-color: #4CAF50; /* Enhanced contrast */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div><a href="#" style="color: #333; text-decoration: none;">Home</a></div>
+        <nav>
+            <a href="#" style="color: #333; text-decoration: none;">Products</a>
+            <a href="#" style="color: #333; text-decoration: none;"><button class="button" style="background-color: #5A88CA; color: white;">Contact Us</button></a>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="image-desc">
+            <img src="wedding-venue.jpg" alt="Wedding Venue" style="max-width: 100%; height: auto;">
+            <p>Explore our luxurious wedding venues and options to make your day unforgettable.</p>
+        </div>
+        <div class="more-details">
+            <h2>Wedding Packages</h2>
+            <p>Choose from a variety of packages that cater to your specific needs and desires for your special day.</p>
+        </div>
+    </div>
+    <div class="form-section">
+        <h2>Contact Us for More Information</h2>
+        <form>
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Your Name" required="">
+            
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Your Email" required="">
+            
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Message" required=""></textarea>
+            
+            <button type="submit" style="background-color: #4CAF50; color: white; border-color: #4CAF50;">Submit</button>
+        </form>
+    </div>
+    <footer class="footer">
+        &copy; 2023 Your Wedding Venue Name. All rights reserved.
+    </footer>
+</body>
+</html>
