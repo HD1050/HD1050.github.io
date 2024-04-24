@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Venue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fde4cf;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #fa9191;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            background-color: #f6dfeb;
+            color: #333;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        nav a:hover {
+            background-color: #b8a9c9;
+        }
+        .content {
+            padding: 20px;
+            text-align: center;
+        }
+        .content img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #fa9191;
+            color: #fff;
+            text-align: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #fa9191;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #f36464;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Dreamy Wedding Venue
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#form">Contact Us</a>
+    </nav>
+    <div class="content" id="home">
+        <h1>Welcome to Our Wedding Venue</h1>
+        <img src="https://via.placeholder.com/400x300.png?text=Wedding+Venue" alt="Wedding Venue">
+        <p>Choose our venue for a magical wedding day!</p>
+    </div>
+    <div class="content" id="products">
+        <h2>Our Packages</h2>
+        <img src="https://via.placeholder.com/400x300.png?text=Luxury+Package" alt="Luxury Package">
+        <p>Experience luxury with our comprehensive wedding package.</p>
+    </div>
+    <div class="content" id="form">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <input type="submit" value="Send">
+        </form>
+    </div>
+    <footer>
+        &copy; 2023 Dreamy Wedding Venue. All rights reserved.
+    </footer>
+</body>
+</html>
